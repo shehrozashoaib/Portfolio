@@ -1,0 +1,14 @@
+# Inviting people to a Party
+    Video Demo: https://youtu.be/HXHZDssd_Ys
+    Description:
+    This project consists of many methods inside of a single class. Suppose you are going to throw a party. However, you realise there are many people to invite. This program will help to keep a track of people you have invited and know the estimated number of attendees.
+
+    The first method is add_attendees(). It takes in two parameters: family_name and number_of_attendees. The family_name attribute should be a string data type, while the number_of_attendees should be passed as integer. The class add_attendees() will create a dictionary, named as info_attendees, and will append the family_name and number_of_attendees into that dictionary. The next method is fairly similar, except that it takes in three lists as parameters (family_name, child_attendees, adult_attendees), and appends it into another dictionary: detailed_info_attendees. This dictionary has more details than the previous one.
+
+    After the two dictionaries are created, it is possible that the two dictionaries may have some discrepancy of data. To resolve this, another method is created: check_and_resolve(). It takes in no parameters, and ensures that the two dictonaries have similar data. It uses the list comprehension method.
+
+    In the light of Covid-19 spread, the government restricts the number of people at the party to just 50. Moreover, they impose that no children shall be allowed n party. The method get_total_attendees() returns the the total number of people attending the party. The method filter_attendees() returns a list of families that are in violation of the Covid-19 restrictions. These are families with childrens or more than two family members. The method covid_changes() can be called to create a text file which contains the information about these families.
+
+    However, despite filtering out people, it is still noticed that the total number of attendees extend beyond 50. In a new method, include_priority(), you would pass in two parameters: family_name as type string and priority as type integer. The priority shold be in range 0 - 5. It adds a new key into the dictionary detailed_info_attendees named as priority corresponding to the respective family_name. The next method is filter_priorities() that takes in the priority as an integer, and returns a list of families whose priority is below the priority passed in. If the priority is not entered, that entry would be ignored. This method uses the filter formula for this purpose.
+
+    In the end, the methods output_info_attendees() and output_detailed_info_attendees() after the previous methods are executed. The output_detailed_info_attendees() takes in one parameter, priority as an integer. Both methods create a csv file. Some execution lines are written at the end as reference.
