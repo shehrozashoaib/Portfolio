@@ -24,7 +24,7 @@ def AddRecord(StNameI, StIDI):
         print("Array is full")
         
 
-def FiindRecord(StIDI):
+def FindRecord(StIDI):
     x = lambda a: a % 10
     index = x(StIDI)
     temp = index
